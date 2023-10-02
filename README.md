@@ -1,3 +1,3 @@
 # Capped
 
-## Capped is a javascript-based word game. 
+### Capped is a javascript-based word game. 
