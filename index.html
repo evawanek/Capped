@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+         rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&family=Inter:wght@100;300;400;500&family=Montserrat&family=Plus+Jakarta+Sans:wght@400;500&family=Raleway&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <dialog id="modal-htp" class="modal-htp">
+         <button id= "close-button" class="close-button" aria-label="Close" type="button">
+         <span aria-hidden = "true">&times;</span>
+         </button>
+         <h1 class= "htp">How to Play</h1>
+         <div class="space">  You will be given 5 words, and each word contains the same three fixed interior letters.</div>
+         <div class="space1">  Once you begin the game, you will receive a clue for your first word.</div>
+         <div class="space2">  Using that clue, try to guess the first and last letter that, when combined with the fixed interior letters, will form a real word.</div>
+         <div class="space3">  Incorrect guesses are not pentalized.</div>
+         <span class="space4">  Guess all 5 words in under 2 minutes and you win! </span>
+         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+         <lord-icon class="medal"
+            src="https://cdn.lordicon.com/jeikhfcr.json"
+            trigger="loop"
+            delay="2000"
+            colors="primary:#ffc738,secondary:#ebe6ef,tertiary:#f24c00,quaternary:#b26836"
+            style="width:50px;height: 50px">
+         </lord-icon>
+         <div class="space5"> New puzzle daily at midnight! </div>
+      </dialog>
+      <dialog id="lose" class="lose">
+         <button id= "close-button-three" class="close-button-three" aria-label="Close" type="button">
+            <span aria-hidden = "true">&times;</span>
+         </button>
+         <h1 class= "share-text">Sorry...try again tomorrow!</h1>
+         <h2 class="missed-word">Your word was: </h2>
+         <h1 class="your-word">WORD</h1>
+   </dialog>
+      <dialog id="congrats" class="congrats">
+         <button id= "close-button-four" class="close-button-four" aria-label="Close" type="button">
+            <span aria-hidden = "true">&times;</span>
+            </button>
+         <h1 class= "share-text">Congrats!</h1>
+         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+         <lord-icon class = "confetti"
+             src="https://cdn.lordicon.com/tqywkdcz.json"
+             trigger="loop"
+             delay="2000"
+             colors="primary:#4bb3fd,secondary:#f28ba8,tertiary:#ffc738,quaternary:#f24c00"
+             style="width:150px;height:150px">
+         </lord-icon>
+   </dialog>
+      <header>
+         <nav class="nav">
+            <button id="question" class="material-symbols-outlined" style="font-size:30px;">help</button>
+            <img src="Untitled_Artwork.png">
+            <button type="button" onclick="window.location.href='mailto:your@email.com';" id="contact" class="material-symbols-outlined" style="font-size:30px;">mail</button>
+            <button id="share" class="material-symbols-outlined" style="font-size:30px;">share</button>
+         </nav>
+      </header>
+      <hr class="hr1">
+      <div id= "wrapper" class="wrapper">
+         <div class="content">
+         </dialog>
+            <div class="guesses-text">0/0</div>
+            <h2 id="timer">2:00</h2>
+            <hr class="bum">
+            <div class="inputs">
+               <input id="inputone" type="text" class="exterior-letters" maxlength="1">
+               <input id="interior-one" type="text" class="interior-letters" maxlength="1" onkeydown="return false">
+               <input id="interior-two" type="text" class="interior-letters" maxlength="1" onkeydown="return false">
+               <input id="interior-three" type="text" class="interior-letters" maxlength="1" onkeydown="return false">
+               <input id="inputtwo" type="text" class="exterior-letters" maxlength="1">
+            </div>
+         </div>
+         <button id="clue-text" class="clue-text"></button>
+         <div class = "buttons">
+            <button id= "mystartbutton" class="mystartbutton">Start</button>
+            <button id= "myguessbutton" class="myguessbutton">Guess</button>
+         </div>
+         <div>
+   
+            <dialog id="modal-share" class="modal-share">
+               <header>
+                  <button class="close-button-two" aria-label="Close" type="button">
+                  <span aria-hidden = "true">&times;</span>
+                  </button>
+                  <h1 class= "share-text">Share</h1>
+               </header>
+               <div class="or-copy-link">Copy link</div>
+               <div class="link-field"></div>
+               <button type="button" class="copy-button" onclick= "copyFunction()">Copy</button>
+               <input type="link" id="myInput" class="website-link" value="example.com">
+            </dialog>
+            <script src="myscript.js"></script>
+         </div>
+      </div>
+   </body>
+</html>
